@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">NavigationPractice</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="goToFrag2">Go to Frag2</string>
+    <string name="goToFrag3">Go to Frag3</string>
+    <string name="goToFrag1">Go to Frag1</string>
+    <string name="goToFrag4">Go to Frag4</string>
+    <string name="goToFrag1_smiley">Go to Frag1 :)</string>
+    <string name="goToGrag1_unhappy">Go to Frag1 :(</string>
+    <string name="menuTitle">Menu Title</string>
+    <string name="menuText">This is my navigation test app to display and practice my navigation abilities.</string>
+    <string name="overflowItem">Overflow Menu Item</string>
+    <string name="overflowMenu">Overflow Menu</string>
+    <string name="navDrawerTitle">NavDrawer Fragment Title</string>
+    <string name="navDrawerText">This is the text of the NavDrawer Fragment.</string>
+    <string name="navDrawerFrag">NavDrawerFrag</string>
+    <string name="navDrawerMenuFrag">NavDrawerMenuFrag</string>
+    <string name="frag1_inputString" />
+    <string name="frag1_sendString">Send String</string>
+</resources>

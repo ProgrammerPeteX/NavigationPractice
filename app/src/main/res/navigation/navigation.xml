@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/frag1">
+     <fragment
+        android:id="@+id/frag1"
+        android:name="com.pdstudios.navigationpractice.Frag1"
+        android:label="Frag1"
+        tools:layout="@layout/fragment_frag1">
+        <action
+            android:id="@+id/action_frag1_to_frag2"
+            app:destination="@id/frag2" />
+    </fragment>
+    <fragment
+        android:id="@+id/frag2"
+        android:name="com.pdstudios.navigationpractice.Frag2"
+        android:label="fragment_frag2"
+        tools:layout="@layout/fragment_frag2" >
+        <action
+            android:id="@+id/action_frag2_to_frag3"
+            app:destination="@id/frag3"
+            app:popUpTo="@id/frag1"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_frag2_to_frag4"
+            app:destination="@id/frag4"
+            app:popUpTo="@id/frag1"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="passArgs"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/frag3"
+        android:name="com.pdstudios.navigationpractice.Frag3"
+        android:label="Frag3"
+        tools:layout="@layout/fragment_frag3">
+        <action
+            android:id="@+id/action_frag3_to_frag1"
+            app:destination="@id/frag1" />
+    </fragment>
+    <fragment
+        android:id="@+id/frag4"
+        android:name="com.pdstudios.navigationpractice.Frag4"
+        android:label="fragment_frag4"
+        tools:layout="@layout/fragment_frag4" >
+        <action
+            android:id="@+id/action_frag4_to_frag1"
+            app:destination="@id/frag1" />
+        <argument
+            android:name="passArgs"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/overflowMenu"
+        android:name="com.pdstudios.navigationpractice.OverflowMenuFrag"
+        android:label="@string/overflowMenu"
+        tools:layout="@layout/fragment_overflow_menu" />
+    <fragment
+        android:id="@+id/navDrawerMenuFrag"
+        android:name="com.pdstudios.navigationpractice.NavDrawerMenuFrag"
+        android:label="@string/navDrawerMenuFrag"
+        tools:layout="@layout/fragment_nav_drawer_menu"/>
+</navigation>
